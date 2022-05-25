@@ -17,6 +17,7 @@ const Section = styled.section`
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    
   }
 `;
 const Content = styled.div`
@@ -54,6 +55,10 @@ const Box = styled.div`
   &:hover ${Content} {
     bottom: 0;
   }
+  @media only screen and (max-width: 768px) {
+    height: 30rem;
+  width: 20rem;
+          }
 `;
 
 const Projects = () => {

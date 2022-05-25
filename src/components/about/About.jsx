@@ -76,7 +76,7 @@ const About = () => {
         <div className="container">
           <AnimatePresence exitBeforeEnter>
             <Routes>
-              <Route path="/" element={<Info />} />
+              <Route path="/DiaaPortfolio" element={<Info />} />
               <Route path="/Personal" element={<Personal />} />
               <Route path="/Skills" element={<Skills />} />
             </Routes>

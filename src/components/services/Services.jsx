@@ -52,8 +52,8 @@ const Section = styled.section`
             width: 20rem;
           }
           @media only screen and (max-width: 768px) {
-            height: 16rem;
-            width: 25rem;
+            height: 14rem;
+            width: 20rem;
           }
 
           h2 {
