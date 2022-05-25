@@ -68,7 +68,7 @@ const About = () => {
       <Section id="About">
         <Nav>
           <Links>
-            <LinkItem to="/">About Me</LinkItem>
+            <LinkItem to="/DiaaPortfolio">About Me</LinkItem>
             <LinkItem to="/Personal">Personal Information</LinkItem>
             <LinkItem to="/Skills">Skills</LinkItem>
           </Links>
