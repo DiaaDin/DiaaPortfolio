@@ -10,10 +10,11 @@ import {
   Routes,
 } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
+
+
+
 const Section = styled.section`
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+  
   .container {
     min-height: 50vh;
     display: flex;
@@ -46,8 +47,7 @@ const LinkItem = styled(NavLink)`
   font-size: 1.6rem;
   font-weight: 600;
   padding: 0.5rem 1rem;
-  border-radius: 10px;
-  transition: all 0.3s ease;
+  transition: opacity 0.3s ease;
   color: var(--linkcolor);
   @media only screen and (max-width: 768px) {
     margin: 0 1rem;
@@ -59,6 +59,7 @@ const LinkItem = styled(NavLink)`
   &.active {
     color: var(--maincolor);
     background-color: var(--linkcolor);
+    border-radius: 1rem;
   }
 `;
 

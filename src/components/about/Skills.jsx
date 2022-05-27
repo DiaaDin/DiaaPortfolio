@@ -6,26 +6,25 @@ import { motion } from "framer-motion";
 const SkillsContainer = styled.div`
   width: 70%;
   max-width: 500px;
-  @media only screen and (max-width: 768px) {
-    width: 90%;
-  }
+  
 
   .skillname {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 600;
     color: var(--maincolor);
     margin: 1rem 0;
   }
+  
 
   .skill-bar {
-    height: 20px;
+    height: 2rem;
     background-color: #22577e;
     border-radius: 5px;
   }
 
   .skillper {
     max-width: 95%;
-    height: 20px;
+    height: 2rem;
     background-color: var(--maincolor);
     position: relative;
     border-radius: 5px;
@@ -38,7 +37,7 @@ const SkillsContainer = styled.div`
       background-color: var(--maincolor);
       right: 0;
       top: -29px;
-      font-size: 1rem;
+      font-size: 1.5rem;
       padding: 4px 5px;
       border-radius: 6px;
       transform: translate(50%);
@@ -50,6 +49,19 @@ const SkillsContainer = styled.div`
     }
     to {
       width: 100%;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    width: 90%;
+    .skillname{
+      font-size: 1.5rem;
+    }
+    .skillper{
+      &::before {
+     
+      font-size: 1rem;
+    
+    }
     }
   }
 `;

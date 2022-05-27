@@ -5,7 +5,6 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Home from "../components/Home";
 import Projects from "../components/projects/Projects";
-import Services from "../components/services/Services";
 
 const LandingPage = () => {
   return (
@@ -13,7 +12,6 @@ const LandingPage = () => {
       <Header />
       <Home />
       <About />
-      <Services />
       <Projects />
       <Contact />
       <Footer />

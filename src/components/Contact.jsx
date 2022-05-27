@@ -138,7 +138,7 @@ const Contact = () => {
   };
 
   return (
-    <Section data-scroll-section>
+    <Section id="Contact">
       <SectionTitle className="MainTitle">Contact</SectionTitle>
       <Div>
         <form ref={refForm} onSubmit={sendEmail}>

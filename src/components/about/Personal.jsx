@@ -7,21 +7,31 @@ import { motion } from "framer-motion";
 
 const Div = styled.div`
   max-width: 550px;
+  .STitle {
+    margin-bottom: 1rem;
+  }
   .PPText {
     margin-bottom: 1rem;
     font-weight: 500;
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
   .hire {
-    font-size: 1.7rem;
+    font-size: 2rem;
     font-weight: 500;
     color: #0fcf2f;
+  }
+  @media only screen and (max-width: 768px) {
+    .PPText {
+      margin-bottom: 1rem;
+      font-weight: 500;
+      font-size: 1.8rem;
+    }
   }
 `;
 
 const Circle = styled(BsFillCircleFill)`
-  height: 9px;
-  width: 9px;
+  height: 1rem;
+  width: 1rem;
 `;
 const Personal = () => (
   <motion.div
@@ -31,9 +41,9 @@ const Personal = () => (
     transition={{ duration: 0.5 }}
   >
     <Div className="personal">
-      <SectionTitle>Personal Information</SectionTitle>
+      <SectionTitle className="STitle">Personal Information</SectionTitle>
       <ParagraphText className="PPText">
-        Name : DiaaEl-din AbdelKhalik Khalil Zahran
+        Name : DiaaEl-din AbdelKhalik Zahran
       </ParagraphText>
       <ParagraphText className="PPText">Age : 23</ParagraphText>
       <ParagraphText className="PPText">Phone : +20 101 318 6038</ParagraphText>

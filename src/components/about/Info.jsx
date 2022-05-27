@@ -10,13 +10,17 @@ const Div = styled.div`
     margin-bottom: 1rem;
   }
   .PText {
-    line-height: 3rem;
-    font-size: 2rem;
+    line-height: 4rem;
+    font-size: 2.5rem;
     font-weight: 500;
     margin-top: 1rem;
   }
   @media only screen and (max-width: 768px) {
-    margin-bottom: 3rem;
+    .PText {
+      margin-bottom: 3rem;
+      line-height: 3rem;
+      font-size: 2rem;
+    }
   }
 `;
 

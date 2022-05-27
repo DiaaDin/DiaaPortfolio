@@ -17,32 +17,47 @@ const Section = styled.section`
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    
+    width: 100%;
+    gap: 1rem;
   }
 `;
 const Content = styled.div`
   position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   bottom: -100%;
   right: 0;
   left: 0;
   height: 7rem;
   transition: bottom 0.4s ease-in-out;
   background-color: rgba(0, 0, 0, 0.7);
-  a {
-    font-size: 1.8rem;
-    line-height: 2rem;
-    margin: 2rem;
+  @media only screen and (max-width: 768px) {
+    height: 5rem;
   }
+  a {
+    font-size: 2rem;
+    margin: 2rem 1rem;
+    @media only screen and (max-width: 768px) {
+      font-size: 1.5rem;
+      margin: 1rem 0.5rem;
+    }
+  }
+  
 `;
 const Box = styled.div`
   height: 35rem;
   width: 25rem;
-  text-align: center;
-  margin: 2rem;
+  margin: 1rem;
   border-radius: 0.5rem;
   position: relative;
   overflow: hidden;
   box-shadow: 2px 1px 4px 1px rgba(0, 0, 0, 0.11);
+  @media only screen and (max-width: 768px) {
+    height: 25rem;
+    width: 17rem;
+    margin: 0;
+  }
   img {
     width: 100%;
     object-fit: cover;
@@ -55,10 +70,7 @@ const Box = styled.div`
   &:hover ${Content} {
     bottom: 0;
   }
-  @media only screen and (max-width: 768px) {
-    height: 30rem;
-  width: 20rem;
-          }
+ 
 `;
 
 const Projects = () => {

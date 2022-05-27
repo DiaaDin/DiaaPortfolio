@@ -14,7 +14,7 @@ const Section = styled.section`
   justify-content: center;
   overflow: hidden;
   position: relative;
-  video {
+  .LgScreenV {
     background-attachment: fixed;
     object-fit: cover;
     height: 100%;
@@ -22,6 +22,21 @@ const Section = styled.section`
     position: absolute;
     top: 0;
     left: 0;
+    @media only screen and (max-width: 768px) {
+    display: none;
+  }
+  }
+  .SmScreenV{
+    object-fit: cover;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  @media only screen and (max-width: 768px) {
+    display: block;
+  }
   }
   .overlay {
     position: absolute;
@@ -37,16 +52,7 @@ const Section = styled.section`
   }
 `;
 const Video = styled.video`
-  object-fit: cover;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: none;
-  @media only screen and (max-width: 768px) {
-    display: block;
-  }
+  
 `;
 const Profile = styled.div`
   display: flex;
@@ -55,6 +61,17 @@ const Profile = styled.div`
   flex-direction: column;
   gap: 1rem;
   z-index: 2;
+  .JobT{
+  font-size: 4rem;
+  margin-top: -6rem;
+  color: var(--maincolor);
+  /* -webkit-text-stroke: .1rem var(--maincolor) */
+  @media only screen and (max-width: 768px) {
+    font-size: 2rem;
+  margin-top: -3rem;
+
+  }
+  }
 `;
 const Title = styled.div`
   display: flex;
@@ -92,11 +109,11 @@ const LinkedIn = styled(FaLinkedin)``;
 const Home = () => {
   return (
     <Section id="Home">
-      <video autoPlay loop muted>
+      <video autoPlay loop muted className="LgScreenV">
         <source src={HomeV} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
-      <Video autoPlay loop muted>
+      <Video autoPlay loop muted className="SmScreenV">
         <source src={MbHome} type="video/mp4" />
         Your browser does not support the video tag.
       </Video>
@@ -195,6 +212,10 @@ const Home = () => {
               n
             </HeroT>
           </Title>
+          <HeroT  initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 1, delay: 1.5 }} className="JobT">Front-End Developer</HeroT>
 
           <Social
             initial={{ opacity: 0 }}

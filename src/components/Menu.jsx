@@ -16,24 +16,24 @@ const Hamburger = styled.div`
     transform-origin: 1px;
     transition: all 0.3s linear;
     &:nth-child(1) {
-      transform: ${({ open }) => (open ? "rotate(45deg)" : "rotate(0)")};
+      transform: ${({ isOpen }) => (isOpen ? "rotate(45deg)" : "rotate(0)")};
     }
     &:nth-child(2) {
-      transform: ${({ open }) =>
-        open ? "translateX(100%)" : "translateX(0%)"};
-      opacity: ${({ open }) => (open ? 0 : 1)};
+      transform: ${({ isOpen }) =>
+        isOpen ? "translateX(100%)" : "translateX(0%)"};
+      opacity: ${({ isOpen }) => (isOpen ? 0 : 1)};
     }
     &:nth-child(3) {
-      transform: ${({ open }) => (open ? "rotate(-45deg)" : "rotate(0)")};
+      transform: ${({ isOpen }) => (isOpen ? "rotate(-45deg)" : "rotate(0)")};
     }
   }
 `;
 
-const Menu = ({open, setOpen}) => {
+const Menu = ({isOpen,toggle}) => {
   
 
   return (
-    <Hamburger open={open} onClick={() => setOpen(!open)}>
+    <Hamburger isOpen={isOpen} onClick={toggle}>
       <div />
       <div />
       <div />
