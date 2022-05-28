@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/DiaaPortfolio/static/css/main.0b617400.css",
-    "main.js": "/DiaaPortfolio/static/js/main.990759e9.js",
+    "main.js": "/DiaaPortfolio/static/js/main.61c84be8.js",
     "static/media/mbhome.mp4": "/DiaaPortfolio/static/media/mbhome.0f38507fb301cdd73290.mp4",
     "static/media/home.mp4": "/DiaaPortfolio/static/media/home.e2e3214079eceb9bfb96.mp4",
     "static/media/kaushan-script-all-400-normal.woff": "/DiaaPortfolio/static/media/kaushan-script-all-400-normal.ba623d1ca520a2a711d2.woff",
@@ -25,10 +25,10 @@
     "static/media/josefin-sans-vietnamese-700-normal.woff2": "/DiaaPortfolio/static/media/josefin-sans-vietnamese-700-normal.14ce0b0ec00cea53df7a.woff2",
     "index.html": "/DiaaPortfolio/index.html",
     "main.0b617400.css.map": "/DiaaPortfolio/static/css/main.0b617400.css.map",
-    "main.990759e9.js.map": "/DiaaPortfolio/static/js/main.990759e9.js.map"
+    "main.61c84be8.js.map": "/DiaaPortfolio/static/js/main.61c84be8.js.map"
   },
   "entrypoints": [
     "static/css/main.0b617400.css",
-    "static/js/main.990759e9.js"
+    "static/js/main.61c84be8.js"
   ]
 }
