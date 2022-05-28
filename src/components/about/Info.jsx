@@ -11,7 +11,7 @@ const Div = styled.div`
   }
   .PText {
     line-height: 4rem;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 500;
     margin-top: 1rem;
   }
@@ -19,7 +19,6 @@ const Div = styled.div`
     .PText {
       margin-bottom: 3rem;
       line-height: 3rem;
-      font-size: 2rem;
     }
   }
 `;

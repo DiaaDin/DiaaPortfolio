@@ -33,25 +33,24 @@ const Content = styled.div`
   bottom: -100%;
   right: 0;
   left: 0;
-  height: 7rem;
+  height: 6rem;
   transition: bottom 0.4s ease-in-out;
   background-color: rgba(0, 0, 0, 0.7);
   @media only screen and (max-width: 768px) {
     height: 5rem;
   }
   a {
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin: 2rem 1rem;
     @media only screen and (max-width: 768px) {
-      font-size: 1.5rem;
       margin: 1rem 0.5rem;
     }
   }
   
 `;
 const Box = styled.div`
-  height: 35rem;
-  width: 25rem;
+  height: 32rem;
+  width: 22rem;
   border-radius: 0.5rem;
   position: relative;
   overflow: hidden;

@@ -62,13 +62,12 @@ const Profile = styled.div`
   gap: 1rem;
   z-index: 2;
   .JobT{
-  font-size: 4rem;
-  margin-top: -6rem;
+  font-size: 3rem;
+  margin-top: -5.5rem;
   color: var(--maincolor);
-  /* -webkit-text-stroke: .1rem var(--maincolor) */
   @media only screen and (max-width: 768px) {
     font-size: 2rem;
-  margin-top: -3rem;
+  margin-top: -3.5rem;
 
   }
   }
@@ -79,7 +78,7 @@ const Title = styled.div`
 `;
 
 const HeroT = styled(motion.h1)`
-  font-size: 13rem;
+  font-size: 11rem;
   letter-spacing: 2px;
   font-family: "Kaushan Script";
   color: var(--seccolor);
