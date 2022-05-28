@@ -44,14 +44,15 @@ const Links = styled.ul``;
 
 const LinkItem = styled(NavLink)`
   margin: 0 1.5rem;
-  font-size: 1.6rem;
-  font-weight: 600;
+  font-size: 2rem;
+  font-weight: 500;
   padding: 0.5rem 1rem;
   transition: opacity 0.3s ease;
   color: var(--linkcolor);
   @media only screen and (max-width: 768px) {
-    margin: 0 1rem;
-    padding: 0.5rem 0.5rem;
+    margin: 0 .5rem;
+    padding:  0.5rem;
+    font-size: 1.8rem;
   }
   &:hover {
     opacity: 0.7;

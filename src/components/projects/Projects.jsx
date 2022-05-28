@@ -16,9 +16,11 @@ const Section = styled.section`
     padding: 5rem 0 0 0;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
     width: 100%;
-    gap: 1rem;
+    gap: 2rem;
+    flex-wrap: wrap;
+  
+   
   }
 `;
 const Content = styled.div`
@@ -48,7 +50,6 @@ const Content = styled.div`
 const Box = styled.div`
   height: 35rem;
   width: 25rem;
-  margin: 1rem;
   border-radius: 0.5rem;
   position: relative;
   overflow: hidden;

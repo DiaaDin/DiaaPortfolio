@@ -53,13 +53,14 @@ const Links = styled.ul`
 `;
 const LinkItem = styled(Link)`
   margin: 0 1.5rem;
-  font-size: 1.6rem;
-  font-weight: 600;
+  font-size: 2rem;
+  font-weight: 500;
   padding: 0.5rem 1rem;
   transition: opacity 0.3s ease;
   color: var(--linkcolor);
-
+  
   @media only screen and (max-width: 768px) {
+    font-size: 1.8rem;
     margin: 2rem 0;
     padding: 0;
   }
@@ -88,10 +89,10 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => {
     setIsOpen(!isOpen);
-   
   };
-  const [navbar, setNavbar] = useState(false);
 
+
+  const [navbar, setNavbar] = useState(false);
   const changeBackground = () => {
     if (window.scrollY >= 150) {
       setNavbar(true);

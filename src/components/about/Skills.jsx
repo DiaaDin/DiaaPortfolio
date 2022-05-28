@@ -5,14 +5,14 @@ import { motion } from "framer-motion";
 
 const SkillsContainer = styled.div`
   width: 70%;
-  max-width: 500px;
+  max-width: 550px;
   
 
   .skillname {
     font-size: 2rem;
     font-weight: 600;
     color: var(--maincolor);
-    margin: 1rem 0;
+    margin: 1.5rem 0;
   }
   
 
