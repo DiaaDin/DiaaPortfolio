@@ -89,7 +89,7 @@ const Projects = () => {
                 <PrimaryButton href={project.view} target="_blank">
                   View
                 </PrimaryButton>
-                <PrimaryButton href={project.view} target="_blank">
+                <PrimaryButton href={project.source} target="_blank">
                   Source
                 </PrimaryButton>
               </Content>
